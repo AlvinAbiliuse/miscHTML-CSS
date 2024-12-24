@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			width: 100vw;
+		}
+		li {
+			list-style: none;
+		}
+		form {
+			width: 400px;
+			border: 1px solid black;
+			padding: 10px;
+			margin: auto;
+			border: 2px solid #e9e9e9;
+			border-radius: 30px;
+		}
+		fieldset {
+			border: 1px solid gray;
+		}
+	</style>
+  </head>
+  <body>
+	<form action="https://httpbin.org/post" method="post">
+		<h1>Payment Form</h1>
+		<p>
+			Required fields are followed by <strong><span 
+			aria-label="required">*</span></strong>
+		</p>
+		<section>
+			<h2>Contact Information</h2>
+			<fieldset>
+				<legend>Title</legend>
+				<ul>
+					<li>
+						<label for="title_1">
+							<input type="radio" id="title_1"
+							name="title" value="A">
+							Ace
+						</label>
+					</li>
+					<li>
+						<label for="title_2">
+							<input type="radio" id="title_2"
+							name="title" value="K">
+							King
+						</label>
+					</li>
+					<li>
+						<label for="title_3">
+							<input type="radio" id="title_3"
+							name="title" value="Q">
+							Queen
+						</label>
+					</li>
+			</fieldset>
+			<p>
+				<label for="name">
+					<span>Name: </span>
+					<strong><span aria-label="required">*</span>
+						</strong>
+				</label>
+				<input type="text" id="name" name="username" required>
+			</p>
+			<p>
+				<label for="mail">
+					<span>Email:</span>
+					<strong><span aria-label="required">*</span>
+						</strong>
+				</label>
+				<input type="email" id="mail" name="user_mail"
+					required>
+			</p>
+			<p>
+				<label for="pwd">
+					<span>Password:</span>
+					<strong><span aria-label="required">*</span>
+						</strong>
+				</label>
+				<input type="password" id="pwd" name="passord"
+					required>
+			</p>	
+		</section>
+		<button type="submit">Submit</button>
+	</form>
+  </body>
+</html>
