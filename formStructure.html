@@ -84,9 +84,44 @@
 					<strong><span aria-label="required">*</span>
 						</strong>
 				</label>
-				<input type="password" id="pwd" name="passord"
+				<input type="password" id="pwd" name="password"
 					required>
 			</p>	
+		</section>
+		<section>
+			<h2>Payment Information</h2>
+			<p>
+				<label for="card">
+					<span>Card type:</span>
+				</label>
+				<select id="card" name="user-card">
+					<option value="visa">Visa</option>
+					<option value="mc">Mastercard</option>
+					<option value="amex">Amex</option>
+				</select>
+			</p>
+			<p>
+				<label for="number">
+					<span>Card number:</span>
+					<strong><span aria-label="required">*</span>
+						</strong>
+				</label>
+				<input type="tel" id="number" name="card-number" 
+					required>
+			</p>
+			<p>
+				<label for="expiration">
+					<span>Expiration date:</span>
+					<strong><span aria-label="required">*</span>
+						</strong>
+					<input
+						type="text"
+						id="expiration"
+						name="expiration"
+						required
+						placeholder="MM/YY"
+						pattern="^(0[1-9]|1[0-2])\/([0-9]{2}$" >
+			</p>
 		</section>
 		<button type="submit">Submit</button>
 	</form>
