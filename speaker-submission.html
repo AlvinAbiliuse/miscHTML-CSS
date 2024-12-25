@@ -8,9 +8,20 @@
 	<body>
 		<header class="speaker-form-header">
 			<h1>Speaker Submission</h1>
-			<p><em>Want to speak aat our fake conference? Fill out
+			<p><em>Want to speak at our fake conference? Fill out
 					this form.</em></p>
 		</header>
+		<form action="https://httpbin.org/post" method="post"
+			class="speaker-form">
+			<div class="form-row">
+				<label for="full-name">Name:</label>
+				<input type="text" id="full-name" name="full-name">
+			</div>
+			<div class="form-row">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+			</div>
+		</form>
 	</body>
 </html>
 
