@@ -1,0 +1,60 @@
+
+:root {
+	--edges: clamp(0px, 2em, 4em)
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.3em;
+}
+
+/* body {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 10px 10px [content-start] 1fr [content-end] 10px 10px;
+} */
+
+
+body {
+	width: 100%;
+	font-size: 1.7em;
+	background: lightgray;
+}
+
+.content-grid {
+	display: grid;
+	margin: 20px 0;
+	gap: 20px;
+	grid-template-columns: [full-width-start] var(--edges) [breakout-start] var(--edges) [content-start] 1fr [content-end] var(--edges) [breakout-end] var(--edges) [full-width-end];
+}
+
+body > .content {
+	grid-column: content;
+}
+
+body > .breakout {
+	grid-column: breakout;
+}
+
+body > .full-width {
+	grid-column: full-width;
+}
+
+h1, div {
+	text-align: center;
+	color: white;
+	padding: 20px;
+	width: 100%;
+}
+
+h1 {
+	background: black;
+}
+
+div {
+	background: gray;
+}
+
+
