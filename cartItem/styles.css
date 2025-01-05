@@ -25,7 +25,7 @@ body {
 	justify-content: space-between;
 	grid-template-columns: 1fr 2fr;
 	width: 600px;
-	height: 400px;
+	height: 450px;
 	padding: 30px 50px;
 	border-radius: 15px;
 	box-shadow: 2px 2px 20px lightgray;
@@ -36,13 +36,17 @@ body {
 	padding: 30px;
 }
 
-img {
+.left img {
 	width: 110px;
 }
 
 button {
+	vertical-align: center;
 	height: 40px;
 	box-sizing: content-box;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .right .submit {
@@ -52,8 +56,12 @@ button {
 	border: none;
 	border-bottom: 6px solid #2163ad;
 	border-radius: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
+.right .submit:hover {
+		background: #3778c1;
+	}
+
 .right {
 	font-size: 20px;
 	> {
@@ -68,8 +76,25 @@ h5 {
 	background: #30344f;
 	border-radius: 30px;
 	width: 80px;
-	padding: 3px;
+	padding: 4px;
 	margin-bottom: 10px;
+}
+
+.offervalidity, .stock {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #b0b0b0;
+}
+
+.stock div {
+	width: 10px;
+	height: 10px;
+	background: #53f455;
+	border-radius: 30px;
+	margin-right: 5px;
 }
 
 .right h3 {
@@ -79,12 +104,13 @@ h5 {
 
 .oldPrice {
 	font-size: 10px;
+	color: #535353;
 	text-decoration: line-through;
 }
 
 .right .newPrice {
-	margin-bottom: 30px;
-	font-size: 30px;
+	margin-bottom: 5px;
+	font-size: 35px;
 	font-weight: bold;
 }
 
@@ -94,8 +120,17 @@ h5 {
 	gap: 10px;
 }
 .white {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex: 1;
+	gap: 5px;
 	border-radius: 10px;
 	background: white;
 	border: 2px solid lightgray;
+	vertical-align: text-top;
+}
+
+.white:hover {
+	background: #ecf5ff;
 }
