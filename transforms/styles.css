@@ -6,8 +6,7 @@ body {
 
 img {
 	width: 60px;
-	transform: rotate(45deg);
-	transform: translateY(30px);
+	transform: rotate(45deg) translateY(30px);
 }
 
 div {
