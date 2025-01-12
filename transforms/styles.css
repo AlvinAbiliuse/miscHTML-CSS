@@ -1,9 +1,21 @@
 
+body {
+	display: flex;
+	flex-direction: column;
+}
 
 img {
+	width: 60px;
 	transform: rotate(45deg);
-	margin-top: 200px;
-	padding: 20px;
+	transform: translateY(30px);
+}
+
+div {
 	border: 1px solid black;
-	transform: translateX(30px);
+	margin-right: auto;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
