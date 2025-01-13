@@ -5,19 +5,17 @@
 	line-height: 1.2em;
 }
 
-body {
-	padding: 50px;
-}
 
 .ball {
 	height: 100px;
 	width: 100px;
 	border-radius: 50px;
 	background: #0406a4;
+	margin: 20px;
 }
 
 p {
-	margin: 20px 0;
+	margin: 20px; 
 	font-size: 40px;
 }
 
