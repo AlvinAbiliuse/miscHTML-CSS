@@ -46,17 +46,27 @@
 .second {
 	div {
 		display: none;
-		margin: 20px;
-		border: 1px solid black;
-		border-radius: none;
+		margin: 20px 0px;
+		border: 1px solid red;
+		padding: 20px;
+		border-radius: 20px;
+		opacity: 0;
+		transition: opacity 1s, display 0.3s allow-discrete;
 	}
 	.show {
+		opacity: 1;
 		display: block;
-		margin: 20px;
+		margin: 20px 0px;
+	}
+	@starting-style {
+		.show {
+			opacity: 0;
+		}
 	}
 	p {
 		margin: 20px 0px;
 	}
+}
 		
 
 	
