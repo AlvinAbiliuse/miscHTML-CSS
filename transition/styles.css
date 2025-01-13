@@ -2,14 +2,16 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.4em;
 }
 
-div {
+.card {
 	font-size: 24px;
 	margin: 20px auto;
 	border: 1px solid black;
 	border-radius: 15px;
-	width: 800px;
+	width: 900px;
 	padding: 40px;
 	li {
 		list-style: none;
@@ -32,12 +34,30 @@ div {
 		color: white;
 		padding: 10px 20px;
 		border-radius: 10px;
-		transition: background 0.5s ease-out, color 0.5s ease-out;
+		transition: all 0.5s ease-out;
 	}
 	a:hover {
 		background: white;
 		color: black;
 		border: 1px solid gray;
 	}
+}
+
+.second {
+	div {
+		display: none;
+		margin: 20px;
+		border: 1px solid black;
+		border-radius: none;
+	}
+	.show {
+		display: block;
+		margin: 20px;
+	}
+	p {
+		margin: 20px 0px;
+	}
+		
+
 	
 	
