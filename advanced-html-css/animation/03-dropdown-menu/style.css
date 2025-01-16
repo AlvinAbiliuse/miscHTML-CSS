@@ -19,6 +19,7 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+	transition: display 2s ease-out;
 }
 
 ul.dropdown-menu li:hover {
@@ -27,6 +28,23 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+	transform-origin: top;
+	animation: open-menu 0.4s;
+}
+
+@keyframes open-menu {
+	0% {
+		scale: 1 0;
+	}
+	70% {
+		scale: 1 1.1;
+	}
+	80% {
+		scale: 1 0.9;
+	}
+	100% {
+		scale: 1 1;
+	}
 }
 
 
