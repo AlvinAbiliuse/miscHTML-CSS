@@ -43,12 +43,43 @@ body {
 	animation: 1s spinner infinite linear;
 }
 
+.five .loading {
+	width: 150px;
+	height: 150px;
+	animation: 2s advanced-spinner infinite;
+}
+
+
+@keyframes advanced-spinner {
+	0% {
+		transform: rotate(0);
+		scale: 1;
+	}
+	25% {
+		transform: rotate(180deg);
+		scale: 1;
+	}
+	50% {
+		transform: rotate(180deg);
+		scale: 1.2;
+	}
+	75% {
+		transform: rotate(360deg);
+		scale: 1.2;
+	}
+	100% {
+		transform: rotate(360deg);
+		scale: 1;
+	}
+} 	
+		
+
 @keyframes spinner {
 	from {
 		transform: rotate(0);
 	}
 	to {
-		transform: rotate(365deg);
+		transform: rotate(360deg);
 	}
 } 
 
