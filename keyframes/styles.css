@@ -37,6 +37,21 @@ body {
 	animation: 2s slide-in infinite alternate;
 }
 
+.four .loading {
+	width: 150px;
+	height: 150px;
+	animation: 1s spinner infinite linear;
+}
+
+@keyframes spinner {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(365deg);
+	}
+} 
+
 @keyframes change-color {
 	from {
 		background-color: red;
