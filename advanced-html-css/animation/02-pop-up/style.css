@@ -56,7 +56,20 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+	animation: slide-in 1000ms;
 }
+
+@keyframes slide-in {
+	0% {
+		translate: 0 -200px;
+		opacity: 0.5;
+	}
+	100% {
+		translate: 0 0;
+		opacity: 1;
+	}
+}
+
 
 .backdrop.show {
   opacity: 30%;
