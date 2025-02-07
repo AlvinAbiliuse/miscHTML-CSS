@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width intial-scale=1" />
+		<title></title>
+		<style>
+			div {
+				max-width: 600px;
+				aspect-ratio: 3/2;
+				background-position: center;
+				border: 3px solid black;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			img {
+				width: 100%;
+				object-fit: contain;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>heading</h1>
+		<p>word</p>
+		<div>
+			<img srcset="./300_cat1.png 300w, ./cat1.jpg 600w" />
+		</div>
+	</body>
+</html>
